@@ -3,6 +3,7 @@
 [Lualine](https://github.com/hoob3rt/lualine.nvim) theme for using with light background.
 
 ### 🖼️ newpaper
+
 ![newpaper-normal](./screenshots/newpaper-normal.png)
 ![newpaper-insert](./screenshots/newpaper-insert.png)
 ![newpaper-visual](./screenshots/newpaper-visual.png)
@@ -26,6 +27,7 @@ Install via your favourite package manager:
 ```lua
 use 'yorik1984/lualine-theme.nvim'
 ```
+
 ### 🚀 Usage
 
 ```lua
@@ -37,6 +39,7 @@ require('lualine').setup {
 ```
 
 ### ⚙️ Configuration
+
 You can add this configuration for customize colors for git and diagnostics:
 ```lua
 require("lualine").setup {
