@@ -1,19 +1,19 @@
-### ℹ️  Info
+## ℹ️  Info
 
 [Lualine](https://github.com/hoob3rt/lualine.nvim) theme for using with light background.
 
 ### 🖼️ newpaper
-![newpaper-mormal](./screenshots/newpaper-normal.png)
+![newpaper-normal](./screenshots/newpaper-normal.png)
 ![newpaper-insert](./screenshots/newpaper-insert.png)
 ![newpaper-visual](./screenshots/newpaper-visual.png)
 ![newpaper-visual_line](./screenshots/newpaper-v_line.png)
 ![newpaper-replace](./screenshots/newpaper-replace.png)
-![newpaper-coomand](./screenshots/newpaper-command.png)
+![newpaper-command](./screenshots/newpaper-command.png)
 
 ### 🌟 Features
 
-+ git native colors in status line
 + bright colors
++ git native colors in status line
 
 ### ⚡️ Requirements
 
