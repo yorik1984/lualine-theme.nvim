@@ -1,5 +1,5 @@
 ## ℹ️  Info
-zRlicense](https://img.shields.io/github/license/hoob3rt/lualine.nvim?style=flat-square)
+[license](https://img.shields.io/github/license/hoob3rt/lualine.nvim?style=flat-square)
 
 [Lualine](https://github.com/hoob3rt/lualine.nvim) theme for using with light background.
 
