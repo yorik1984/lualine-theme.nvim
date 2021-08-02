@@ -1,5 +1,5 @@
 ## ℹ️  Info
-![license](https://img.shields.io/github/license/hoob3rt/lualine.nvim?style=flat-square)
+zRlicense](https://img.shields.io/github/license/hoob3rt/lualine.nvim?style=flat-square)
 
 [Lualine](https://github.com/hoob3rt/lualine.nvim) theme for using with light background.
 
@@ -42,6 +42,8 @@ require('lualine').setup {
 ### ⚙️ Configuration
 
 You can add this configuration for customize colors for git and diagnostics:
+
+![git_color](./screenshots/git_color.png) ![diagnostics_color](./screenshots/diagnostics_color.png)
 ```lua
 require("lualine").setup {
     options = {
