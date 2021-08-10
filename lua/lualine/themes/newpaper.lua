@@ -1,8 +1,6 @@
--- local colors = require('newpaper.colors')
-
 local colors = {
   blue            = '#0087AF',
-  navy            = '#005F87',
+  teal            = '#005F87',
   green           = '#50A14F',
   darkgreen       = '#008700',
   blueviolet      = '#AF87D7',
@@ -21,12 +19,12 @@ local colors = {
 
 return {
   normal = {
-    a = {fg = colors.navy,   bg = colors.silver, gui = 'bold'},
+    a = {fg = colors.teal,   bg = colors.silver, gui = 'bold'},
     b = {fg = colors.git_fg, bg = colors.git_bg}, -- only for GIT
-    c = {fg = colors.navy,   bg = colors.silver},
+    c = {fg = colors.teal,   bg = colors.silver},
     x = {fg = colors.gray,   bg = colors.silver},
     y = {fg = colors.bg,     bg = colors.blue},
-    z = {fg = colors.bg,     bg = colors.navy}
+    z = {fg = colors.bg,     bg = colors.teal}
   },
   insert = {
     a = {fg = colors.darkgreen, bg = colors.silver, gui = 'bold'},
