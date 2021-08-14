@@ -8,8 +8,8 @@
 
 ### ⚠️ NOTE
 
-No need to install this if you are using [newpaper](https://github.com/yorik1984/newpaper.nvim) colosсheme for Neovim. Lualine theme was included to colorscheme.
-Just use configuration to customize it.
+No need to install this if you are using [newpaper](https://github.com/yorik1984/newpaper.nvim) colosсheme for Neovim. Lualine theme was included into colorscheme.
+Just use this configuration to customize it.
 
 ### 🖼️ newpaper-light
 
@@ -44,6 +44,8 @@ use 'yorik1984/lualine-theme.nvim'
 require('lualine').setup {
     options = {
         theme = 'newpaper-light'
+        -- with newpaper colosheme use 
+		-- theme = 'newpaper'
     }
 }
 ```
@@ -52,11 +54,13 @@ require('lualine').setup {
 
 You can add this configuration for customize colors for git and diagnostics:
 
-![git_color-light](./screenshots/git_color-light.png) ![diagnostics_color-light](./screenshots/diagnostics_color-light.png)
+![git_color-light](https://user-images.githubusercontent.com/1559192/129439361-fb12878a-d166-4dfb-baea-0f6ca01e1c1d.png) ![diagnostics_color-light](https://user-images.githubusercontent.com/1559192/129439370-e315b6c9-4914-4ecb-ac9d-149a1be5f284.png)
 ```lua
 require("lualine").setup {
     options = {
         theme = "newpaper-light",
+        -- with newpaper colosheme use 
+		-- theme = 'newpaper'
         section_separators = {"", ""}, 
         component_separators = {"│", "│"}
     },
