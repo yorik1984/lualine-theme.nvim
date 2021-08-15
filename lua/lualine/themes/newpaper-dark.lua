@@ -1,21 +1,21 @@
 -- LuaFormatter off
 local colors = {
-  blue            = '#0087AF',
-  teal            = '#005F87',
-  green           = '#50A14F',
-  darkgreen       = '#008700',
-  blueviolet      = '#AF87D7',
-  purple          = '#8700AF',
-  magenta         = '#D7005F',
-  pink            = '#FFD7FF',
-  red             = '#DF0000',
-  lightorange     = '#E9B96E',
+  blue            = '#00AFAF',
+  teal            = '#7e9f9f',
+  green           = '#00875F',
+  darkgreen       = '#5FAF5F',
+  blueviolet      = '#5F005F',
+  purple          = '#AF87D7',
+  magenta         = '#D75FAF',
+  pink            = '#5F0000',
+  red             = '#BB0000',
+  lightorange     = '#413932',
   darkorange      = '#AF5F00',
-  bg              = '#F1F3F2',
-  gray            = '#585858',
-  silver          = '#E4E4E4',
-  git_bg          = '#EBEAE2',
-  git_fg          = '#413932'
+  bg              = '#2B2B2B',
+  gray            = '#808080',
+  silver          = '#3A3A3A',
+  git_bg          = '#303030',
+  git_fg          = '#EBEAE2'
 }
 
 return {
@@ -53,9 +53,9 @@ return {
     z = {fg = colors.bg,         bg = colors.darkorange}
   },
   inactive = {
-    a = {fg = colors.gray, bg = colors.silver, gui = 'bold'},
-    b = {fg = colors.gray, bg = colors.silver},
-    c = {fg = colors.gray, bg = colors.silver}
+    a = {fg = colors.gray,       bg = colors.silver, gui = 'bold'},
+    b = {fg = colors.gray,       bg = colors.silver},
+    c = {fg = colors.gray,       bg = colors.silver}
   }
 }
 -- LuaFormatter on

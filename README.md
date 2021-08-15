@@ -3,9 +3,6 @@
 
 [Lualine](https://github.com/hoob3rt/lualine.nvim) theme for using with light and dark background.
 
-### TODO:
-- [ ] Dark theme 
-
 ### ⚠️ NOTE
 
 No need to install this if you are using [newpaper](https://github.com/yorik1984/newpaper.nvim) colosсheme for Neovim. Lualine theme was included into colorscheme.
@@ -20,10 +17,21 @@ Just use this configuration to customize it.
 ![newpaper-light-replace](https://user-images.githubusercontent.com/1559192/129404792-3d698007-654b-4905-b01a-39e9b54a4b6f.png)
 ![newpaper-light-command](https://user-images.githubusercontent.com/1559192/129404785-7179d4dd-66e6-4a71-8135-fcf1cee67e8c.png)
 
+### 🖼️ newpaper-dark
+
+![newpaper-dark-normal](https://user-images.githubusercontent.com/1559192/129481063-7f6651b5-2fe3-47f9-b522-5829105a43f3.png)
+![newpaper-dark-insert](https://user-images.githubusercontent.com/1559192/129481065-f078c808-dbce-4ff2-a4cb-898d0e8dc750.png)
+![newpaper-dark-visual](https://user-images.githubusercontent.com/1559192/129481072-f1e0169d-b892-410d-9f24-7322a214e6a2.png)
+![newpaper-dark-v_line](https://user-images.githubusercontent.com/1559192/129481081-c778d476-2c1d-4bb0-8904-26a6e3b0faa0.png)
+![newpaper-dark-v_block](https://user-images.githubusercontent.com/1559192/129481085-89b8eb24-e8d5-456a-b29b-31a5fc5f6a60.png)
+![newpaper-dark-replace](https://user-images.githubusercontent.com/1559192/129481091-a196dcfc-4c4d-4ccb-8069-f9f3443ab36e.png)
+![newpaper-dark-command](https://user-images.githubusercontent.com/1559192/129481093-40a09545-327c-4101-9727-fd3234509c78.png)
+
 ### 🌟 Features
 
-+ bright colors
 + git native colors in status line
++ light and dark theme
++ integration to colorscheme with installation from [newpaper.nvim](https://github.com/yorik1984/newpaper.nvim)
 
 ### ⚡️ Requirements
 
@@ -32,7 +40,9 @@ Just use this configuration to customize it.
 ### 📦 Installation
 
 Install via your favourite package manager:
+
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
 ```lua
 use 'yorik1984/lualine-theme.nvim'
 ```
@@ -48,19 +58,32 @@ require('lualine').setup {
 		-- theme = 'newpaper'
     }
 }
+
+-- dark theme
+require('lualine').setup {
+    options = {
+        theme = 'newpaper-dark'
+        -- with newpaper colosheme use 
+		-- theme = 'newpaper'
+    }
+}
 ```
 
 ### ⚙️ Configuration
 
 You can add this configuration for customize colors for git and diagnostics:
 
-![git_color-light](https://user-images.githubusercontent.com/1559192/129439361-fb12878a-d166-4dfb-baea-0f6ca01e1c1d.png) ![diagnostics_color-light](https://user-images.githubusercontent.com/1559192/129439370-e315b6c9-4914-4ecb-ac9d-149a1be5f284.png)
-```lua
++ in light
+    ![git_color-light](https://user-images.githubusercontent.com/1559192/129439361-fb12878a-d166-4dfb-baea-0f6ca01e1c1d.png) ![diagnostics_color-light](https://user-images.githubusercontent.com/1559192/129439370-e315b6c9-4914-4ecb-ac9d-149a1be5f284.png)
++ in dark
+    ![git_color-dark](https://user-images.githubusercontent.com/1559192/129459043-9d7a2806-ab12-4a70-88ec-ee17d943e326.png)
+    ```lua
 require("lualine").setup {
     options = {
+        -- theme = "newpaper-dark",
         theme = "newpaper-light",
-        -- with newpaper colosheme use 
-		-- theme = 'newpaper'
+        -- with newpaper colosheme use
+		-- theme = 'newpaper',
         section_separators = {"", ""}, 
         component_separators = {"│", "│"}
     },
@@ -70,7 +93,6 @@ require("lualine").setup {
             {"branch", icon = ""},
             {"diff",
                 colored = true,
-                -- light theme
                 color_added    = "#28A745",
                 color_modified = "#DBAB09",
                 color_removed  = "#D73A49",
@@ -85,7 +107,6 @@ require("lualine").setup {
             {'diagnostics',
                 sources =  {"nvim_lsp"},
                 sections = {"error", "warn", "info", "hint"},
-                -- light theme
                 color_error = "#DF0000",
                 color_warn  = "#D75F00",
                 color_info  = "#0087AF",
