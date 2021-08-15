@@ -55,7 +55,7 @@ require('lualine').setup {
     options = {
         theme = 'newpaper-light'
         -- with newpaper colosheme use 
-		-- theme = 'newpaper'
+        -- theme = 'newpaper'
     }
 }
 
@@ -64,7 +64,7 @@ require('lualine').setup {
     options = {
         theme = 'newpaper-dark'
         -- with newpaper colosheme use 
-		-- theme = 'newpaper'
+        -- theme = 'newpaper'
     }
 }
 ```
@@ -84,7 +84,7 @@ require("lualine").setup {
         -- theme = "newpaper-dark",
         theme = "newpaper-light",
         -- with newpaper colosheme use
-		-- theme = 'newpaper',
+        -- theme = 'newpaper',
         section_separators = {"", ""}, 
         component_separators = {"│", "│"}
     },
