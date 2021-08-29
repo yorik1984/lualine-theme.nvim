@@ -39,7 +39,7 @@ Just use this configuration to customize it.
 
 ### 📦 Installation
 
-Install via your favourite package manager:
+Install via your favorite package manager:
 
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
@@ -71,14 +71,21 @@ require('lualine').setup {
 
 ### ⚙️ Configuration
 
-You can add this configuration for customize colors for git and diagnostics:
+You can add this configuration for customize colors for git and diagnostics.
+
+Available options:
+
+| Option | Default | Description |
+| -------| ------- |------------ |
+| newpaper_lualine_bold |`true` | When true, section headers in the lualine theme will be bold |
 
 + in light
     ![git_color-light](https://user-images.githubusercontent.com/1559192/129439361-fb12878a-d166-4dfb-baea-0f6ca01e1c1d.png) ![diagnostics_color-light](https://user-images.githubusercontent.com/1559192/129439370-e315b6c9-4914-4ecb-ac9d-149a1be5f284.png)
 + in dark
     ![git_color-dark](https://user-images.githubusercontent.com/1559192/129459043-9d7a2806-ab12-4a70-88ec-ee17d943e326.png)
-    
 ```lua
+-- Lua
+vim.g.newpaper_lualine_bold = true --default
 require("lualine").setup {
     options = {
         -- theme = "newpaper-dark",
