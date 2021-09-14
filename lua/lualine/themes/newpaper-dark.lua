@@ -1,7 +1,7 @@
 -- LuaFormatter off
 local colors = {
   blue            = '#5FAFD7',
-  teal            = '#7E9F9F',
+  teal            = '#5F8787',
   green           = '#00875F',
   darkgreen       = '#5FAF5F',
   blueviolet      = '#5F005F',
