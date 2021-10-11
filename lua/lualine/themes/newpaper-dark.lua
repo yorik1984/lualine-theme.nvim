@@ -12,6 +12,7 @@ local colors = {
   darkorange      = '#AF5F00',
   bg              = '#2B2B2B',
   gray            = '#808080',
+  lightgray       = '#787878',
   silver          = '#3A3A3A',
   git_bg          = '#303030',
   git_fg          = '#EBEAE2'
@@ -53,9 +54,9 @@ newpaper.command = {
     z = { fg = colors.bg,         bg = colors.darkorange }
 }
 newpaper.inactive = {
-    a = { fg = colors.gray,       bg = colors.silver },
-    b = { fg = colors.gray,       bg = colors.silver },
-    c = { fg = colors.gray,       bg = colors.silver }
+    a = { fg = colors.lightgray,  bg = colors.silver },
+    b = { fg = colors.lightgray,  bg = colors.silver },
+    c = { fg = colors.lightgray,  bg = colors.silver }
 }
 -- LuaFormatter on
 
