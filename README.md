@@ -1,7 +1,6 @@
 ## ℹ️  Info
-[license](https://img.shields.io/github/license/hoob3rt/lualine.nvim?style=flat-square)
 
-[Lualine](https://github.com/hoob3rt/lualine.nvim) theme for using with light and dark background.
+[Lualine](https://github.com/nvim-lualine/lualine.nvim) theme for using with light and dark background.
 
 ### ⚠️ NOTE
 
@@ -54,8 +53,7 @@ use 'yorik1984/lualine-theme.nvim'
 require('lualine').setup {
     options = {
         theme = 'newpaper-light'
-        -- with newpaper colosheme use 
-        -- theme = 'newpaper'
+        -- empty with newpaper colosheme 
     }
 }
 
@@ -63,8 +61,7 @@ require('lualine').setup {
 require('lualine').setup {
     options = {
         theme = 'newpaper-dark'
-        -- with newpaper colosheme use 
-        -- theme = 'newpaper'
+        -- empty with newpaper colosheme  
     }
 }
 ```
@@ -90,20 +87,22 @@ require("lualine").setup {
     options = {
         -- theme = "newpaper-dark",
         theme = "newpaper-light",
-        -- with newpaper colosheme use
-        -- theme = 'newpaper',
+        -- empty with newpaper colosheme
         section_separators = {"", ""}, 
         component_separators = {"│", "│"}
     },
     sections = {
         -- GIT settings
         lualine_b = {
-            {"branch", icon = ""},
-            {"diff",
+            {'branch', icon = ""},
+            {
+                'diff',
                 colored = true,
-                color_added    = "#28A745",
-                color_modified = "#DBAB09",
-                color_removed  = "#D73A49",
+                diff_color = {
+                    added    = { fg = '#28A745' },
+                    modified = { fg = '#DBAB09' },
+                    removed  = { fg = '#D73A49' }
+                },
                 symbols = {
                     added    = " ",
                     modified = " ",
@@ -112,13 +111,16 @@ require("lualine").setup {
             }
         },
         lualine_x = {
-            {'diagnostics',
-                sources =  {"nvim_lsp"},
-                sections = {"error", "warn", "info", "hint"},
-                color_error = "#DF0000",
-                color_warn  = "#D75F00",
-                color_info  = "#0087AF",
-                color_hint  = "#008700",
+            {	
+                'diagnostics',
+                sources =  {'nvim_lsp'},
+                sections = {'error', 'warn', 'info', 'hint'},
+                diagnostics_color = {
+                    error = { fg = '#AF0000' },
+                    warn  = { fg = '#D75F00' },
+                    info  = { fg = '#0087AF' },
+                    hint  = { fg = '#008700' }
+                },
                 symbols = {
                     error = " ",
                     warn  = " ",
