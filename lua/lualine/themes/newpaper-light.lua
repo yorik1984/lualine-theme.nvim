@@ -11,8 +11,8 @@ local colors = {
     lightorange = '#E4C07A',
     darkorange  = '#AF5F00',
     bg          = '#F1F3F2',
-    gray        = '#585858',
-    lightgray   = '#878787',
+    grey        = '#585858',
+    lightgrey   = '#878787',
     silver      = '#E4E4E4',
     git_bg      = '#EBEAE2',
     git_fg      = '#413932'
@@ -24,39 +24,39 @@ newpaper.normal = {
     a = { fg = colors.teal,       bg = colors.silver },
     b = { fg = colors.git_fg,     bg = colors.git_bg }, -- only for GIT
     c = { fg = colors.teal,       bg = colors.silver },
-    x = { fg = colors.gray,       bg = colors.silver },
+    x = { fg = colors.grey,       bg = colors.silver },
     y = { fg = colors.bg,         bg = colors.blue },
     z = { fg = colors.bg,         bg = colors.teal }
 }
 newpaper.insert = {
     a = { fg = colors.darkgreen,  bg = colors.silver },
     c = { fg = colors.darkgreen,  bg = colors.silver },
-    x = { fg = colors.gray,       bg = colors.silver },
+    x = { fg = colors.grey,       bg = colors.silver },
     y = { fg = colors.bg,         bg = colors.green },
     z = { fg = colors.bg,         bg = colors.darkgreen }
 }
 newpaper.visual = {
     a = { fg = colors.bg,         bg = colors.purple },
-    c = { fg = colors.gray,       bg = colors.blueviolet },
-    y = { fg = colors.gray,       bg = colors.blueviolet },
+    c = { fg = colors.grey,       bg = colors.blueviolet },
+    y = { fg = colors.grey,       bg = colors.blueviolet },
     z = { fg = colors.bg,         bg = colors.purple }
 }
 newpaper.replace = {
     a = { fg = colors.bg,         bg = colors.magenta },
-    c = { fg = colors.gray,       bg = colors.pink },
-    y = { fg = colors.gray,       bg = colors.pink },
+    c = { fg = colors.grey,       bg = colors.pink },
+    y = { fg = colors.grey,       bg = colors.pink },
     z = { fg = colors.bg,         bg = colors.magenta }
 }
 newpaper.command = {
     a = { bg = colors.darkorange, fg = colors.bg },
-    c = { fg = colors.gray,       bg = colors.lightorange },
-    y = { fg = colors.gray,       bg = colors.lightorange },
+    c = { fg = colors.grey,       bg = colors.lightorange },
+    y = { fg = colors.grey,       bg = colors.lightorange },
     z = { fg = colors.bg,         bg = colors.darkorange }
 }
 newpaper.inactive = {
-    a = { fg = colors.lightgray,  bg = colors.silver },
-    b = { fg = colors.lightgray,  bg = colors.silver },
-    c = { fg = colors.lightgray,  bg = colors.silver }
+    a = { fg = colors.lightgrey,  bg = colors.silver },
+    b = { fg = colors.lightgrey,  bg = colors.silver },
+    c = { fg = colors.lightgrey,  bg = colors.silver }
 }
 -- LuaFormatter on
 
