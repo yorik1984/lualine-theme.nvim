@@ -38,18 +38,21 @@ newpaper.insert = {
 newpaper.visual = {
     a = { fg = colors.bg,         bg = colors.purple },
     c = { fg = colors.grey,       bg = colors.blueviolet },
+    x = { fg = colors.grey,       bg = colors.blueviolet },
     y = { fg = colors.grey,       bg = colors.blueviolet },
     z = { fg = colors.bg,         bg = colors.purple }
 }
 newpaper.replace = {
     a = { fg = colors.bg,         bg = colors.magenta },
     c = { fg = colors.grey,       bg = colors.pink },
+    x = { fg = colors.grey,       bg = colors.pink },
     y = { fg = colors.grey,       bg = colors.pink },
     z = { fg = colors.bg,         bg = colors.magenta }
 }
 newpaper.command = {
     a = { bg = colors.darkorange, fg = colors.bg },
     c = { fg = colors.grey,       bg = colors.lightorange },
+    x = { fg = colors.grey,       bg = colors.lightorange },
     y = { fg = colors.grey,       bg = colors.lightorange },
     z = { fg = colors.bg,         bg = colors.darkorange }
 }
