@@ -43,24 +43,24 @@ Install via your favorite package manager:
 #### [packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 ```lua
-use 'yorik1984/lualine-theme.nvim'
+use "yorik1984/lualine-theme.nvim"
 ```
 
 ### 🚀 Usage
 
 ```lua
 -- light theme
-require('lualine').setup {
+require("lualine").setup {
     options = {
-        theme = 'newpaper-light'
+        theme = "newpaper-light"
         -- empty with newpaper colosheme 
     }
 }
 
 -- dark theme
-require('lualine').setup {
+require("lualine").setup {
     options = {
-        theme = 'newpaper-dark'
+        theme = "newpaper-dark"
         -- empty with newpaper colosheme  
     }
 }
@@ -94,14 +94,14 @@ require("lualine").setup {
     sections = {
         -- GIT settings
         lualine_b = {
-            {'branch', icon = ""},
+            {"branch", icon = ""},
             {
-                'diff',
+                "diff",
                 colored = true,
                 diff_color = {
-                    added    = { fg = '#28A745' },
-                    modified = { fg = '#DBAB09' },
-                    removed  = { fg = '#D73A49' }
+                    added    = { fg = "#28A745" },
+                    modified = { fg = "#DBAB09" },
+                    removed  = { fg = "#D73A49" }
                 },
                 symbols = {
                     added    = " ",
@@ -111,15 +111,15 @@ require("lualine").setup {
             }
         },
         lualine_x = {
-            {	
-                'diagnostics',
-                sources =  {'nvim_lsp'},
-                sections = {'error', 'warn', 'info', 'hint'},
+            {
+                "diagnostics",
+                sources =  {"nvim_lsp"},
+                sections = {"error", "warn", "info", "hint"},
                 diagnostics_color = {
-                    error = { fg = '#AF0000' },
-                    warn  = { fg = '#D75F00' },
-                    info  = { fg = '#0087AF' },
-                    hint  = { fg = '#008700' }
+                    error = { fg = "#AF0000" },
+                    warn  = { fg = "#D75F00" },
+                    info  = { fg = "#0087AF" },
+                    hint  = { fg = "#008700" }
                 },
                 symbols = {
                     error = " ",
