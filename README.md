@@ -4,7 +4,7 @@
 
 ### ⚠️ NOTE
 
-No need to install this if you are using [newpaper](https://github.com/yorik1984/newpaper.nvim) colosсheme for Neovim. Lualine theme was included into colorscheme.
+No need to install this if you are using [newpaper](https://github.com/yorik1984/newpaper.nvim) colorscheme for Neovim. Lualine theme was included into colorscheme.
 Just use this configuration to customize it.
 
 ### 🖼️ newpaper-light
@@ -61,7 +61,7 @@ require("lualine").setup {
 require("lualine").setup {
     options = {
         theme = "newpaper-dark"
-        -- empty with newpaper colosheme  
+        -- empty with newpaper colorscheme  
     }
 }
 ```
@@ -87,7 +87,7 @@ require("lualine").setup {
     options = {
         -- theme = "newpaper-dark",
         theme = "newpaper-light",
-        -- empty with newpaper colosheme
+        -- empty with newpaper colorscheme
         section_separators = {"", ""}, 
         component_separators = {"│", "│"}
     },
