@@ -1,10 +1,10 @@
 -- stylua: ignore start
 local colors = {
     blue        = "#5FAFD7",
-    teal        = "#86A3A3",
+    teal        = "#72AEB3",
     green       = "#00875F",
     darkgreen   = "#5FAF5F",
-    blueviolet  = "#5F005F",
+    blueviolet  = "#342840",
     purple      = "#A274D1",
     magenta     = "#D75FAF",
     pink        = "#2E2323",
