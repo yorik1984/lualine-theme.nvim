@@ -40,30 +40,37 @@ Just use this configuration to customize it.
 
 Install via your favorite package manager:
 
-#### [packer.nvim](https://github.com/wbthomason/packer.nvim)
+#### [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
-use "yorik1984/lualine-theme.nvim"
+require("lazy").setup({
+    {
+        "yorik1984/lualine-theme.nvim",
+        dependencies =  {
+            "nvim-lualine/lualine.nvim",
+        },
+    },
+})
 ```
 
 ### 🚀 Usage
 
 ```lua
 -- light theme
-require("lualine").setup {
+require("lualine").setup({
     options = {
         theme = "newpaper-light"
         -- empty with newpaper colosheme 
     }
-}
+})
 
 -- dark theme
-require("lualine").setup {
+require("lualine").setup({
     options = {
         theme = "newpaper-dark"
         -- empty with newpaper colorscheme  
     }
-}
+})
 ```
 
 ### ⚙️ Configuration
